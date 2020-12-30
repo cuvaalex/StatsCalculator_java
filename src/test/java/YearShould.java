@@ -29,4 +29,12 @@ public class YearShould {
         assertThat(result).isTrue();
     }
 
+    @Test
+    public void
+    is_NotleapYear_if_dividedby_100_butNot_400() {
+        Year year = new Year(1800);
+        boolean result = year.isLeapYear();
+        assertThat(result).isFalse();
+    }
+
 }
