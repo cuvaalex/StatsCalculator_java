@@ -5,7 +5,7 @@ public class Year {
         this.year = year;
     }
 
-    public static boolean isLeapYear() {
-        return false;
+    public boolean isLeapYear() {
+        return year % 4 == 0;
     }
 }
